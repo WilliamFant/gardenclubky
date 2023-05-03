@@ -6,15 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>The Garden Club of Kentucky | Home for Kentucky Gardeners</title>
-</head>
-<body>
     <header>
         <H1>The Garden Club of Kentucky</H1>
         <img src="./images/kygardenclub.jpg" alt="">
-        <ul>hi</ul>
-        <ul>hi</ul>
-        <ul>hi</ul>
-        <ul>hi</ul>
+    <!--make a social media part of the website where you can show news and upcoming events with a google calendar api-->
+	<script src="https://apis.google.com/js/api.js"></script>
+	<script>
+		gapi.load('client', initClient); // load the client API
+		function initClient() {
+			// API key and Calendar ID
+			var apiKey = 'AIzaSyCZw30QaziriYCzkHlmXAaUmxwX8Ou6D9Y';
+			var calendarId = 'b4b2edf0ab559cfda8e1fed3a5ba5d370215d5021cabb79e53db9081f21ed004@group.calendar.google.com';
+			// authorize the client with API key
+			gapi.client.init({
+				'apiKey': apiKey,
+			}).then(function() {
+				// make the API request
+				return gapi.client.request({
+					'path': `https://www.googleapis.com/calendar/v3/calendars/${calendarId}/events?orderBy=startTime&singleEvents=true`,
+				})
+                }).then(function(response) {
+				// handle the API response
+				var events = response.result.items;
+				var eventList = document.getElementById('eventList');
+				events.map(function(event) {
+					var eventItem = document.createElement('li');
+					var eventLink = document.createElement('a');
+					eventLink.href = event.htmlLink;
+					eventLink.target = '_blank';
+					eventLink.innerText = event.summary;
+					eventItem.innerText = new Date(event.start.dateTime).toLocaleString() + ': ';
+					eventItem.appendChild(eventLink);
+					eventList.appendChild(eventItem);
+				})
+			}, function(reason) {
+				// handle the error
+				console.log(reason);
+			});
+		}
+	</script>
+</head>
+<body>
+	<!-- Display the latest news and events -->
+	<h2>Latest News and Events</h2>
+	<ul>
+		<li>News 1</li>
+	    <li>News 2</li>
+		<li>News 3</li>
+	</ul>
+	<h2>Upcoming Events</h2>
+	<ul id="eventList"></ul>
+    <iframe src="https://calendar.google.com/calendar/embed?src=b4b2edf0ab559cfda8e1fed3a5ba5d370215d5021cabb79e53db9081f21ed004%40group.calendar.google.com&ctz=America%2FChicago" width="800" height="800" frameborder="0" scrolling="no"></iframe>
+    <a href="https://www.gardenclubky.org/contact-us" class="su-button su-button-style-default" target="_self"><i class="sui sui-envelope"></i></span></a>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1uL6iG_3lYVcfll6aIkV0c53XLlY" width="500" height="500"></iframe>
     </header>
     <!-- make a footer for a website called ky garden club that has a contact part and a subscription-->
     <footer>  
