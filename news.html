@@ -13,28 +13,45 @@
 </head>
 <!-- navbar -->
 <header>
-	<img src="./images/kygardenclub.jpg" alt="">
-	<nav>
-		<ul>
-			<li><a href="#home">Home</a></li>
-			<li><a href="#membership">Membership</a></li>
-			<li><a href="#news">News</a></li>
-			<li><a href="#contact">Contact Us</a></li>
-		</ul>
-	</nav>
+    <!-- navbar -->
+    <nav>
+        <img src="./images/kygardenclub.jpg" alt="">
+        <div class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="members.html">Membership</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
 </header>
 
 <body>
 	<div id="main">
 		<ul id="eventList"></ul>
-		<iframe src="https://calendar.google.com/calendar/embed?src=b4b2edf0ab559cfda8e1fed3a5ba5d370215d5021cabb79e53db9081f21ed004%40group.calendar.google.com&ctz=America%2FChicago" width="500" height="500"></iframe>
-		<iframe src="https://www.google.com/maps/d/embed?mid=1uL6iG_3lYVcfll6aIkV0c53XLlY" width="500" height="500"></iframe>
+		<iframe src="https://calendar.google.com/calendar/embed?src=01df46aa2f2edd9c5983eebee828f22af230dda554fc199ecc0511ea07c89ca6%40group.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="50%" height="50%" frameborder="0" scrolling="no"></iframe>
+		<iframe src="https://www.google.com/maps/d/embed?mid=1uL6iG_3lYVcfll6aIkV0c53XLlY" style="border: 0" width="50%" height="50%" scrolling="no"></iframe>
 	</div>
 	
 	<footer>
-		<p class="copy">&copy; 2021 KY Garden Club. All rights reserved.</p>
+		<ul class="social_icon">
+			<li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+			<li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+			<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+		</ul>
+		<ul class="menu">
+			<li><a href="#">Home</a></li>
+            <li><a href="members.html">Membership</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+		</ul>
+		<p>@2023 Commonwealth Coders Spring</p>
 	</footer>
 </body>
+
+
+
 <script src="https://apis.google.com/js/api.js"></script>
 <script>
 	gapi.load('client', initClient); // load the client API

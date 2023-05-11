@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800;900&display=swap');
 
 * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    min-height: 100vh;
+    background: #fff;
+}
 
 /* navbar */
-header{
+nav {
     position: sticky;
     width: 100%;
     background-color: #fff;
@@ -14,26 +21,27 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15)
 }
 
-header img {
+nav img {
     width: 175px;
     cursor: pointer;
 }
 
-nav ul {
+nav .navigation ul {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 
-nav ul li {
-    display: flex;
-    justify-content: space-evenly;
-    width: 10vw;
+nav .navigation ul li {
+    list-style: none;
+    margin-left: 30px;
 }
 
-nav ul li a {
+nav .navigation ul li a {
     text-decoration: none;
     color: #67963a;
     font-size: 20px;
@@ -42,7 +50,7 @@ nav ul li a {
 
 }
 
-nav ul li a:hover {
+nav .navigation ul li a:hover {
     color: #e2e776;
 }
 
@@ -91,7 +99,7 @@ nav ul li a:hover {
     color: #fff;
     background-color: #67963a;
     transition: 0.3s ease;
-    
+
 }
 
 #home a.green:hover {
@@ -109,4 +117,64 @@ nav ul li a:hover {
 #home a.brown:hover {
     color: #6a634d;
     background-color: #fff;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background: #67963a;
+    height: 25vh;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .social_icon,
+footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+footer .social_icon li,
+footer .menu li {
+    list-style: none;
+}
+
+footer .social_icon li a {
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social_icon li a:hover {
+    transform: translateY(-10px);
+}
+
+footer .menu li a {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+footer .menu li a:hover {
+    opacity: 1;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 0.8em;
 }
