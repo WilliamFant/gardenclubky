@@ -119,6 +119,58 @@ nav .navigation ul li a:hover {
     background-color: #fff;
 }
 
+#about_us{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#about_us h1{
+    color: #67963a;
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+}
+
+#about_us p{
+    color: #6a634d;
+    font-size: .9rem;
+    letter-spacing: 1px;
+}
+
+#about_us .about-base {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#about_us .about-box {
+    background: #fff;
+    text-align: start;
+}
+
+#about_us .about-box i {
+    font-size: 2.3em;
+    color: #6a634d;
+}
+
+#about_us .about-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #67963a;
+    padding: 13px 0 7px 0;
+}
+
+#about_us .about-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+}
+
+
+
+
+
+
 footer {
     position: relative;
     width: 100%;
