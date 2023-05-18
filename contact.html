@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Contact Us</title>
-<link rel="stylesheet" href="./stylemem.css">
+<link rel="stylesheet" href="./style.css">
 
 </head>
 
@@ -17,120 +17,119 @@
     <img src="./images/kygardenclub.jpg" alt="">
     <div class="navigation">
         <ul>
-            <li><a href=index.html>Home</a></li>
-            <li><a href=members.html>Membership</a></li>
-            <li><a href=news.html>News</a></li>
-            <li><a href=contact.html>Contact Us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="members.html">Membership</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </div>
 </nav>
 
 <!-- home -->
-<div class="container">
-    <div class="navbar">
-    <div class="logo">
-    <img src="Images/kygardenclub.jpg" width="125px">
-</div>
-<nav>
- <ul>
-    
-    <li><a href="">Home</a></li>
-    <li><a href="">Memberships</a></li>
-    <li><a href="">Donations</a></li>
-    <li><a href="">Locations</a></li>
-   </ul>
-   <img src="Images/kygardenclub.jpg" width="30px" height="30px">
-</nav>
-   </div>
-    <div class="row">
-    <div class="col-2">
-</div>
+<section id="contact">
+    <h2 style="margin-top: 10px;">Contact Us</h2>
+    <ul><li>To <a href="https://www.gardenclubky.org/headquarters/#rental">rent the Wallis House</a> for a tea, wedding, or other function, please call us at <a href="tel:8599876158">859-987-6158</a>.</li></ul>
+    <ul><li>To report a death, please use the <a href="https://www.gardenclubky.org/contact-us/memoriam/">In Memoriam form</a></li></ul>
 
-
-<h1>Welcome to the Membership page</h1>
-<p>Members
-    To submit pictures of your club activities, projects, flower shows or other events for the banner, or if you need assistance with anything on the website, click here.
-    
-    The following pages are primarily of interest to Garden Club Members.
-    
-    These items are password protected for privacy. Use the password in your GCKY Bulletin, not your personal password to this site.</p>
-    <a href="" class="btn" id="joinnowbtn">Join Now</a>
-       
-    
-    
-    <div class="col-2">
-            <!-- <img src="Images/mainpage.jpg" alt="" id="mainpage"> -->
-        </div>
-
-
-
-
-</ul>
-
-<!------Featured Memberships------>
-    <div class="categories">
-        <div class="row">
-            <div class="col-3" id="GCKYdiv">
-               <div>
-            <img src="Images/GCKY512-250x380.png" alt="Membership-Garden Club of KY" id="GCKY">
-                
-                <h3>$20.00</h3>
-                <button class="button" id="btnGCKY">Buy Now</button>
-            </div> 
+    <address style ="margin-bottom: 20px;">
+        The Garden Club of Kentucky, Inc. <br>
+        State Headquarters  616 Pleasant Street<br>
+        Paris, Kentucky 40361<br>
+        gckyheadquarters@att.net<br>
+        <a href="tel:8599876158">859-987-6158</a>
+    </address>
+    <form>
+        <label for="name">Name</label>
+        <br>
+        <input type="text" id="name" name="name" placeholder="Name">
+        <br>
+        <div class="input-row">
+            <br>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <br>
+                <input type="text" id="email" name="email" placeholder="Email" required>
             </div>
-          
-            <div class="col-3" id="brick">
-                <div>
-                <img src="Images/Brick Background Removed.png" alt="Engraved brick" id="brick">
-
-                <h3>$50.00</h3>
-                <button class="button" id="btnbrick">Buy Now</button>
+            
+            <div class="input-group">
+                <label for="phonenum">Phone Number</label>
+                <br>
+                <input type="text" id="phonenum" name="phonenum" placeholder="Phone Number">
             </div>
-            </div>
-            <div class="col-3" id="donations">
-                <div>
-                <img src="Images/Screen-Shot-2019-09-27-at-20.53.52-250x380.png" alt="Donations" id="donations">
-
-                <h3>$5.00</h3>
-                <button class="button" id="btndonations">Buy Now</button>
-            </div>
-            </div>
-            <div class="col-3" id="dollars">
-                <div>
-                <img src="Images/dollars.png" alt="dollars" id="dollars">
-
-                <h3>$1.00</h3>
-                <button class="button" id="btndollars">Buy Now</button>
-            </div>
-            </div>
-            <!-- <div class="col-3" id="life">
-                <div>
-                <img src="Images/GCKY512-250x380.png" alt="membership for life" id="life">
-
-                <h3>$50.00</h3>
-                <button class="button" id="btnlife">Buy Now</button>
-            </div>
-            </div> -->
-    
-        </div>
+            
+    `   </div>
         
-    </div>
+        <label for="address">Street Address</label><br>
+        <input type="text" id="address" name="address" placeholder="Street Address">
+        <br>
+        <input type="text" id="address" name="address2" placeholder="Address 2">
+        <br>
+        
+        <div class="input-row">
+            <br>
+            <div class="input-group">
+                <label for="city">City</label>
+                <br>
+                <input type="text" id="city" name="city" placeholder="city">
+            </div>
+            
+            <div class="input-group">
+                <label for="state">State</label>
+                <br>
+                <input type="text" id="state" name="state" placeholder="State/Province">
+            </div>
+
+            <div class="input-group">
+                <label for="zip code">Zip Code</label>
+                <br>
+                <input type="text" id="zip code" name="zip code" placeholder="Zip/Postal Code">
+            </div>
+            
+    `   </div>
+
+        <label for="subject">Subject</label>
+        <select name="subject" id="subject" style="margin-bottom: 20px;">
+            <option value="">Choose a subject</option>
+            <option value="Weddings and Rentals">Weddings and Rentals</option>
+            <option value="Calendar of Events">Calendar of Events</option>
+            <option value="Chaplain">Chaplain</option>
+            <option value="Flower Shows">Flower Shows</option>
+            <option value="GCKY Bulletin">GCKY Bulletin</option>
+            <option value="Membership">Membership</option>
+            <option value="Scholarships">Scholarships</option>
+            <option value="Website">Website</option>
+            <option value="Other">Other</option>
+        </select>
+        <br>
+        <label for="message">Message</label>
+        <br>
+        <textarea id="message" name="message" rows="5" cols="33" style="margin-bottom: 10px;" required>Message</textarea>
+
+       <button type="submit" form="form" value="Submit" style="margin-bottom: 10px;">Submit</button>
+    </form>
+    
+    
 
 </section>
-    <footer>
-       <ul class="social_icon">
-            <li><a href="https://www.facebook.com/GardenClubKentucky"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="https://www.youtube.com/channel/UC2LEh3o9NPckn6WmSL2VFvg"><i class="fa-brands fa-youtube"></i></a></li>
-            <li><a href="https://twitter.com/intent/tweet?text=Hey%2C+check+out+this+cool+site+I+found%3A+www.yourname.com+%23Topic+via%40my_twitter_name+https://www.gardenclubky.org/"><i class="fa-brands fa-twitter"></i></a></li>
-        </ul>
-        <ul class="menu">
-            <li><a href=index.html>Home</a></li>
-            <li><a href=members.html>Membership</a></li>
-            <li><a href=news.html>News</a></li>
-            <li><a href=contact.html>Contact Us</a></li>
-        </ul>
-        <p>@2023 Commonwealth Coders Spring</p>
-    </footer>
+    
+
+
 
 </body>
+
+<footer>
+    <ul class="social_icon">
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+    </ul>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="members.html">Membership</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <p>@2023 Commonwealth Coders Spring</p>
+</footer>
+
 </html>
