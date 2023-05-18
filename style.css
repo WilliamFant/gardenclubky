@@ -176,11 +176,6 @@ nav .navigation ul li a:hover {
     color: black;
 }
 
-
-
-
-
-
 footer {
     position: relative;
     width: 100%;
@@ -429,4 +424,9 @@ iframe{
 #news{
     display: flex;
     justify-content: space-evenly;
+}
+
+#categories{
+    display: flex;
+    justify-content: space-between;
 }
