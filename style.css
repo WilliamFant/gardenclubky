@@ -121,17 +121,15 @@ nav .navigation ul li a:hover {
 
 #about_us {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 4vw;
     text-align: center;
-    padding: 5vw 8vw 0 8vw;
-    text-align: center;
-
 }
 
 #about_us h1 {
@@ -432,6 +430,17 @@ iframe{
     width: 15vw;
 
 }
+/*  members */
+
+.membership{ 
+    font-family: 'Raleway', sans-serif;
+    background-image: url(Images/mainpage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    text-align: center;
+    background-attachment: fixed;
+}
 
 img{
     width: 20%;
@@ -441,4 +450,43 @@ img{
     width: 25%;
     position: relative;
     bottom: 5px;
+}
+
+#members {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url(./images/mainpage.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#top{
+    text-align: center;
+    padding:5vh 4vw 5vh 4vw;
+}
+
+.sec{
+    display: flex;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    position: inherit;
+    width: 40vw;
+}
+
+
+#dollars, #donations, #brick, #gcky {
+    width: 20vw;
+}
+
+#GCKYdiv,#gcky, #brick, #donations, #dollars {
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: inherit;
+    color: gray;
+    background-color: #FFF;
+    border-radius: 30px;
 }
