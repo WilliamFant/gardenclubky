@@ -434,12 +434,11 @@ iframe{
 }
 
 img{
-    width: 2cap0%;
+    width: 20%;
 }
 /* button with images */
 .button {
     width: 25%;
     position: relative;
     bottom: 5px;
-   
 }
