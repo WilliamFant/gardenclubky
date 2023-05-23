@@ -446,19 +446,27 @@ img{
     width: 20%;
 }
 /* button with images */
-.button {
-    width: 25%;
-    position: relative;
-    bottom: 5px;
-}
+
 
 #members {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url(./images/mainpage.jpg);
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url(./images/babyplants.avif);
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     background-size: cover;
     background-position: center;
     color: white;
+}
+
+.button {
+    color: #fff;
+    background-color:#67963a;
+    transition: 0.3s ease;
+    height: 5vh;
+    
+    }
+.button:hover {
+    color: #67963A;
+    background-color: #fff;
 }
 
 #top{
@@ -491,3 +499,58 @@ img{
     border-radius: 30px;
 }
 
+#contact {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url(./images/meadow.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 40px;
+}
+
+#contact a{
+    color: #e2e776;
+}
+
+#contact a:hover {
+    color: aqua;
+}
+
+#contact a:visited {
+    color: aqua;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#message::after, name::after {
+    content: "*";
+    color: red;
+}
+form{
+    padding: 2vw;
+    border-radius: 20px;
+    background-color: #67963A;
+    color: black;
+}
+
+
+input{
+    width:15vw;
+}
+
+#enter{
+    width: 25vw;
+    height: 5vh;
+    border: 20px;
+    border-radius: 10px;
+}
