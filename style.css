@@ -569,3 +569,7 @@ textarea{
     border: 20px;
     border-radius: 10px;
 }
+
+.hide{
+    color: #67963A;
+}
